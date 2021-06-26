@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm watch-client",
+      "type": "npm",
+      "script": "watch-client",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true
+      }
+    }
+  ]
+}

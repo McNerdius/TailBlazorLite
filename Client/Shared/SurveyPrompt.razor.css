@@ -1,0 +1,5 @@
+.alert {
+  @apply relative py-3 px-6 mb-4 mt-6;
+  @apply border border-transparent rounded;
+  @apply text-gray-700 bg-gray-200 border-gray-300;
+}

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <IntermediateOutputPath>obj</IntermediateOutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0-preview.5.*" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0-preview.5.*" PrivateAssets="all" />
+    </ItemGroup>
+    <Target Name="tw-build" AfterTargets="Build" Condition="'$(Configuration)' == 'Debug'" >
+        <Exec Command="npm run build-client" />
+        <Message Text="SLOW CSS BUILD" />
+    </Target>
+    <Target Name="tw-publish" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'" >
+        <Exec Command="npm run publish-client" />
+    </Target>
+</Project>

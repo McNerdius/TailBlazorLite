@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "blazorwasm",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/Client",
+      "preLaunchTask": "npm watch-client",
+      "postDebugTask": "npm stop",
+    },
+    {
+      "name": "Watch",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "console": "integratedTerminal",
+      "args": [
+        "watch",
+        "run"
+      ],
+      "cwd": "${workspaceFolder}/Client",
+      "preLaunchTask": "npm watch-client",
+      "presentation": {
+        "close": true
+      }
+    },
+  ]
+}

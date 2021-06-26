@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+
+<div class="relative flex flex-col sm:flex-row">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="flex-1">
+        <div class="top-row px-4 sm:pl-8 sm:pr-6">
+            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+        </div>
+
+        <div class="pt-5 px-4 sm:pl-8 sm:pr-6">
+            @Body
+        </div>
+    </div>
+</div>

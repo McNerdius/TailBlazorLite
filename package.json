@@ -1,0 +1,18 @@
+{
+  "name": "tailblazor-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-client": "npx tailwindcss --watch --postcss postcss.config.js --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css",
+    "build-client": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css",
+    "publish-client": "npx tailwindcss --postcss postcss.config.js --minify --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.4"
+  }
+}
