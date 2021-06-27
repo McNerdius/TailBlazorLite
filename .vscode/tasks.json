@@ -2,17 +2,31 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "npm watch-client",
+      "label": "start tailwind jit/watch",
       "type": "npm",
       "script": "watch-client",
-      "problemMatcher": [],
+      // "problemMatcher": [],
       "isBackground": true,
       "presentation": {
         "echo": false,
-        "reveal": "silent",
+        "reveal": "never",
         "panel": "shared",
         "clear": true
       }
+    },
+    {
+      "label": "stop tailwind jit/watch",
+      "command": "echo ${input:terminate}",
+      "type": "shell",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "terminate",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "start tailwind jit/watch"
     }
   ]
 }
