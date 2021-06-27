@@ -2,6 +2,18 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Clean & Build",
+      "type": "shell",
+      "command": "dotnet clean && dotnet build --no-restore",
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true
+      },
+      "group": "build"
+    },
+    {
       "label": "start tailwind jit/watch",
       "type": "npm",
       "script": "watch-client",
@@ -13,6 +25,20 @@
         "panel": "shared",
         "clear": true
       }
+    },
+    {
+      "label": "build & start tailwind jit/watch",
+      "isBackground": true,
+      "dependsOn": [
+        "Clean & Build",
+        "start tailwind jit/watch"
+      ],
+      // "presentation": {
+      //   "echo": false,
+      //   "reveal": "never",
+      //   "panel": "shared",
+      //   "clear": true
+      // }
     },
     {
       "label": "stop tailwind jit/watch",
