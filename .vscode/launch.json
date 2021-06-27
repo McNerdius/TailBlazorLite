@@ -2,14 +2,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug",
-      "type": "blazorwasm",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/Client",
-      "preLaunchTask": "start tailwind jit/watch",
-      "postDebugTask": "stop tailwind jit/watch"
-    },
-    {
       "name": "Watch",
       "type": "coreclr",
       "request": "launch",
@@ -20,11 +12,19 @@
         "run"
       ],
       "cwd": "${workspaceFolder}/Client",
-      "preLaunchTask": "Clean & Build",
+      "preLaunchTask": "start tailwind jit/watch",
+      "postDebugTask": "stop tailwind jit/watch",
       "presentation": {
         "close": true,
       },
       "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "Debug",
+      "type": "blazorwasm",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/Client",
+      "preLaunchTask": "Clean & Build",
     },
   ]
 }
