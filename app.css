@@ -20,16 +20,6 @@ a {
   @apply text-blue-600 hover:underline;
 }
 
-.btn {
-  @apply inline-block align-middle;
-  @apply text-base font-normal text-center select-none;
-  @apply bg-transparent text-white bg-blue-600 border-blue-700;
-  @apply rounded border border-transparent;
-  @apply py-1.5 px-3;
-  @apply transition duration-150 ease-in-out;
-  @apply focus:ring-4;
-}
-
 table td,
 table th {
   @apply p-3 align-top;
