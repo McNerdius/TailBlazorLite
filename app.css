@@ -12,10 +12,6 @@ h1 {
   @apply text-4xl leading-[1.2] font-medium mb-2;
 }
 
-a {
-  @apply text-blue-600 hover:no-underline;
-}
-
 table td,
 table th {
   @apply p-3 align-top;
