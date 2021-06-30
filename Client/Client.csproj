@@ -8,7 +8,7 @@
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0-preview.5.*" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0-preview.5.*" PrivateAssets="all" />
     </ItemGroup>
-    <Target Name="npm check" BeforeTargets="npm install">
+    <!-- <Target Name="npm check" BeforeTargets="npm install">
         <Exec Command="npm -v" ContinueOnError="true">
             <Output TaskParameter="ExitCode" PropertyName="error" />
         </Exec>
@@ -16,7 +16,7 @@
     </Target>
     <Target Name="npm install" BeforeTargets="tailwind build">
         <Exec Command="npm install" />
-    </Target>
+    </Target> -->
     <Target Name="tailwind build" AfterTargets="Build">
         <Exec Command="npm run build-client" Condition="'$(Configuration)' == 'Debug'"/>
         <Exec Command="npm run publish-client" Condition="'$(Configuration)' == 'Release'"/>
