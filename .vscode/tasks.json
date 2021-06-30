@@ -17,7 +17,6 @@
       "label": "start tailwind jit/watch",
       "type": "npm",
       "script": "watch-client",
-      // "problemMatcher": [],
       "isBackground": true,
       "presentation": {
         "echo": false,
@@ -32,19 +31,12 @@
       "dependsOn": [
         "Clean & Build",
         "start tailwind jit/watch"
-      ],
-      // "presentation": {
-      //   "echo": false,
-      //   "reveal": "never",
-      //   "panel": "shared",
-      //   "clear": true
-      // }
+      ]
     },
     {
       "label": "stop tailwind jit/watch",
       "command": "echo ${input:terminate}",
-      "type": "shell",
-      "problemMatcher": []
+      "type": "shell"
     }
   ],
   "inputs": [
