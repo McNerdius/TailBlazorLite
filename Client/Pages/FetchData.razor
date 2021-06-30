@@ -7,7 +7,7 @@
 
 @if (forecasts is null)
 {
-    <p class="m-auto">
+    <p class="mx-auto">
         <Loading />
     </p>
 }
@@ -15,7 +15,8 @@ else
 {
     <table class="w-full mb-4 text-gray-800 border-collapse">
         <thead>
-            <tr>
+            <tr class="border-b-2 border-solid border-gray-200 
+                     bg-yellow-200">
                 <th>Date</th>
                 <th>Temp. (C)</th>
                 <th>Temp. (F)</th>
@@ -25,7 +26,7 @@ else
         <tbody>
             @foreach (var forecast in forecasts)
             {
-                <tr>
+                <tr class="bg-blue-300 even:bg-blue-200">
                     <td>@forecast.Date.ToShortDateString()</td>
                     <td>@forecast.TemperatureC</td>
                     <td>@forecast.TemperatureF</td>

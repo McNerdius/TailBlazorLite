@@ -12,17 +12,6 @@ h1 {
   @apply text-4xl leading-[1.2] font-medium mb-2;
 }
 
-table td,
-table th {
-  @apply p-3 align-top;
-  @apply border-t border-gray-200;
-  @apply bg-white;
-}
-
-table thead th {
-  @apply align-bottom border-b-2 border-solid border-gray-200;
-}
-
 #blazor-error-ui {
   background: lightyellow;
   bottom: 0;
