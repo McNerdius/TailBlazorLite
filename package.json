@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch-client": "npx tailwindcss --watch --postcss postcss.config.js --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css",
-    "build-client": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css",
-    "publish-client": "npx tailwindcss --postcss postcss.config.js --minify --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css"
+    "watch": "npx tailwindcss --watch --postcss postcss.config.js --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css",
+    "build": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css",
+    "publish": "npx tailwindcss --postcss postcss.config.js --minify --config tailwind.config.js -i app.css -o ./Client/wwwroot/css/app.min.css"
   },
   "keywords": [],
   "author": "",

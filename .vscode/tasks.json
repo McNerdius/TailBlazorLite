@@ -16,7 +16,7 @@
     {
       "label": "start tailwind jit/watch",
       "type": "npm",
-      "script": "watch-client",
+      "script": "watch",
       "isBackground": true,
       "presentation": {
         "echo": false,
