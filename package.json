@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "0BSD",
   "devDependencies": {
     "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.4"
