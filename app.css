@@ -1,8 +1,7 @@
 ﻿@import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
-@import "./Client/obj/scopedcss/projectbundle/Client.bundle.scp.css";
+@import "./Client/obj/scopedcss/bundle/Client.styles.css";
 
 p {
   @apply mb-4;

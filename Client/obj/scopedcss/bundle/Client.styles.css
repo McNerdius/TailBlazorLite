@@ -1,0 +1,53 @@
+/* /Pages/FetchData.razor.rz.scp.css */
+th[b-7qilhptvsz],
+td[b-7qilhptvsz] {
+  @apply text-left px-3 py-2;
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar[b-kd1ih0s86n] {
+  @apply relative flex flex-wrap;
+  @apply items-center justify-between;
+  @apply h-14 pl-6 pr-4 py-2;
+  @apply text-lg bg-black/40;
+}
+
+.nav[b-kd1ih0s86n] {
+  @apply flex flex-wrap flex-col;
+  @apply pl-0 mb-0;
+  @apply list-none;
+}
+
+.navbar-toggler[b-kd1ih0s86n] {
+  @apply bg-white/10;
+  @apply px-3 py-1;
+  @apply text-lg leading-4;
+  @apply border border-white/10 rounded;
+  @apply sm:hidden;
+}
+
+.navbar-toggler-icon[b-kd1ih0s86n] {
+  @apply inline-block items-center align-middle;
+  @apply text-white/50;
+  @apply w-6 h-6;
+
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.nav-item[b-kd1ih0s86n] {
+  @apply text-sm pb-2 px-4;
+  @apply first:pt-4 last:pb-4;
+}
+
+.nav-item[b-kd1ih0s86n]  a {
+  @apply text-gray-100 rounded h-12 flex items-center leading-[3rem];
+}
+
+.nav-item[b-kd1ih0s86n]  a.active {
+  @apply text-white bg-white/25;
+}
+
+.nav-item[b-kd1ih0s86n]  a:hover {
+  @apply text-white bg-white/10;
+}

@@ -1,4 +1,10 @@
 **/obj/*
+!**/obj/scopedcss
+
+**/obj/scopedcss/Components
+**/obj/scopedcss/projectbundle
+**/obj/scopedcss/Pages
+**/obj/scopedcss/Shared
+
 **/bin/*
 **/node_modules/*
-**/app.min.css
