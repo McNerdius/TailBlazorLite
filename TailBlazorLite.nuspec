@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>McNerdius.TailBlazor.Lite.nuspec</id>
+        <version>0.1.0</version>
+        <description>
+      A minimal Tailwind JIT + Blazor WASM adaptation of the default Bootstrap-based template.
+    </description>
+        <authors>McNerdius</authors>
+        <license type="expression">0BSD</license>
+        <packageTypes>
+            <packageType name="Template" />
+        </packageTypes>
+    </metadata>
+    <files>
+        <file src="Source\**\*.*" exclude="**\bin\**;**\obj\**;**\node_modules\**" target="Content" />
+    </files>
+</package>
