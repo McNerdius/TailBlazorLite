@@ -1037,7 +1037,7 @@ video {
 
 /* /Pages/FetchData.razor.rz.scp.css */
 
-th[b-7qilhptvsz], td[b-7qilhptvsz] {
+th[b-rqt669938h], td[b-rqt669938h] {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
@@ -1047,7 +1047,7 @@ th[b-7qilhptvsz], td[b-7qilhptvsz] {
 
 /* /Shared/NavMenu.razor.rz.scp.css */
 
-.navbar[b-kd1ih0s86n] {
+.navbar[b-k8q19ijtrb] {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -1063,7 +1063,7 @@ th[b-7qilhptvsz], td[b-7qilhptvsz] {
   line-height: 1.75rem;
 }
 
-.nav[b-kd1ih0s86n] {
+.nav[b-k8q19ijtrb] {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1072,7 +1072,7 @@ th[b-7qilhptvsz], td[b-7qilhptvsz] {
   list-style-type: none;
 }
 
-.navbar-toggler[b-kd1ih0s86n] {
+.navbar-toggler[b-k8q19ijtrb] {
   background-color: rgba(255, 255, 255, 0.1);
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1087,12 +1087,12 @@ th[b-7qilhptvsz], td[b-7qilhptvsz] {
 }
 
 @media (min-width: 640px) {
-  .navbar-toggler[b-kd1ih0s86n] {
+  .navbar-toggler[b-k8q19ijtrb] {
     display: none;
   }
 }
 
-.navbar-toggler-icon[b-kd1ih0s86n] {
+.navbar-toggler-icon[b-k8q19ijtrb] {
   display: inline-block;
   align-items: center;
   vertical-align: middle;
@@ -1104,7 +1104,7 @@ th[b-7qilhptvsz], td[b-7qilhptvsz] {
   background-size: 100% 100%;
 }
 
-.nav-item[b-kd1ih0s86n] {
+.nav-item[b-k8q19ijtrb] {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.5rem;
@@ -1112,15 +1112,15 @@ th[b-7qilhptvsz], td[b-7qilhptvsz] {
   line-height: 1.25rem;
 }
 
-.nav-item[b-kd1ih0s86n]:first-child {
+.nav-item[b-k8q19ijtrb]:first-child {
   padding-top: 1rem;
 }
 
-.nav-item[b-kd1ih0s86n]:last-child {
+.nav-item[b-k8q19ijtrb]:last-child {
   padding-bottom: 1rem;
 }
 
-.nav-item[b-kd1ih0s86n]  a {
+.nav-item[b-k8q19ijtrb]  a {
   display: flex;
   height: 3rem;
   align-items: center;
@@ -1130,13 +1130,13 @@ th[b-7qilhptvsz], td[b-7qilhptvsz] {
   color: rgba(243, 244, 246, var(--tw-text-opacity));
 }
 
-.nav-item[b-kd1ih0s86n]  a.active {
+.nav-item[b-k8q19ijtrb]  a.active {
   background-color: rgba(255, 255, 255, 0.25);
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-.nav-item[b-kd1ih0s86n]  a:hover {
+.nav-item[b-k8q19ijtrb]  a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
