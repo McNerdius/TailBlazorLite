@@ -11,7 +11,7 @@
         "watch",
         "run"
       ],
-      "cwd": "${workspaceFolder}/Client",
+      "cwd": "${workspaceFolder}/",
       "preLaunchTask": "start tailwind jit/watch",
       "postDebugTask": "stop tailwind jit/watch",
       "presentation": {
@@ -23,7 +23,7 @@
       "name": "Debug",
       "type": "blazorwasm",
       "request": "launch",
-      "cwd": "${workspaceFolder}/Client",
+      "cwd": "${workspaceFolder}/",
       "preLaunchTask": "Clean & Build",
     },
   ]

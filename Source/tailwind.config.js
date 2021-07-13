@@ -1,6 +1,6 @@
 module.exports = {
     purge: [
-        './Client/**/*.{razor,html}'
+        './**/*.{razor,html}'
     ],
     mode: 'jit',
     darkMode: 'media',
