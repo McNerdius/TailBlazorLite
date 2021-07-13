@@ -12,6 +12,6 @@
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "TailBlazor",
-  "defaultName": "TailBlazor"
+  "sourceName": "TailBlazorProject",
+  "defaultName": "TailBlazorProject"
 }
