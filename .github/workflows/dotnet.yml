@@ -22,8 +22,9 @@ jobs:
       - name: Build
         run: dotnet build "./Source" --configuration Release --no-restore
       - name: Pack
-        run: nuget.exe pack "./TailBlazorLite.nuspec" -NoDefaultExcludes -OutputDirectory "./"
+        run: nuget.exe pack "./TailBlazorLite.nuspec" -NoDefaultExcludes
       - name: Push
         run: |
+          ls
           dotnet nuget add source "https://nuget.pkg.github.com/McNerdius/index.json" --name "github" --store-password-in-clear-text --username McNerdius --password ${{ secrets.GITHUB_TOKEN }}
-          dotnet nuget push "./*.nupkg" --source "github" --api-key ${{ secrets.GHTOKEN }}
+          dotnet nuget push "*.nupkg" --source "github" --api-key ${{ secrets.GHTOKEN }}
