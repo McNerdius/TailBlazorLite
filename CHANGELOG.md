@@ -6,7 +6,7 @@
   - apply the [accessibility](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-6/#improved-blazor-accessibility) changes.
   - use `main` and `article` in `MainLayout.razor`
   - add `FocusOnNavigate` to `App.razor` and special handling for `tabindex="-1"`
-    - `FocusOnNavigate` works by setting `tabindex="-1"` which Bootstrap 4 special-cases with `outline: 0 !important;` (As far as i can tell this special casing doesn't happen in Bootstrap 5, and this isn't the only example of Blazor/Bootstrap coupling. 🤔)
+    - `FocusOnNavigate` works by setting `tabindex="-1"` which Bootstrap 4 special-cases with `outline: 0 !important;` (Side note: As far as i can tell this special casing doesn't happen in Bootstrap 5, and this isn't the only example of Blazor/Bootstrap coupling. 🤔)
   - add `title=` to NavMenu buttons
   - add `[EditorRequired]` to `IconLink` and `SurveyPrompt`. Works for [ChildContent parameters](Assets/[EditorRequired].png), too !
 - Set up GH Action to package the template. Manual download/PackTemplate/install as described below is required to use `dotnet new tailblazor`; It seems using GH Packages anonymously isn't a thing. Pushing to NuGet will come sooner rather than later, it seems.
