@@ -11,6 +11,10 @@ h1 {
   @apply text-4xl leading-[1.2] font-medium mb-2;
 }
 
+[tabindex="-1"]:focus {
+  @apply !outline-none;
+}
+
 #blazor-error-ui {
   background: lightyellow;
   bottom: 0;
