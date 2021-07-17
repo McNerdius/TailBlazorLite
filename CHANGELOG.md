@@ -1,3 +1,7 @@
+# 7/16/2021
+
+- Use [Incrmental Builds](https://docs.microsoft.com/en-us/visualstudio/msbuild/incremental-builds?view=vs-2019) and [Touch Task](https://docs.microsoft.com/en-us/visualstudio/msbuild/touch-task?view=vs-2019) to prevent redundant npm Target runs.
+
 # 7/15/2021
 
 - Fix, or at least improve, "F5" experience for VS Code. Was having an issue where post-clone, `dotnet watch run` wasn't building all of the things, in that it was throwing errors that didn't happen if i'd done `dotnet build && dotnet watch run`.
