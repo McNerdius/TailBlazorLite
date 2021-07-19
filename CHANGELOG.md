@@ -1,3 +1,7 @@
+# 0.2.3
+
+- include `watch.ps1` to start Blazor/Tailwind watch in one go
+
 # 7/16/2021
 
 - Use [Incrmental Builds](https://docs.microsoft.com/en-us/visualstudio/msbuild/incremental-builds?view=vs-2019) and [Touch Task](https://docs.microsoft.com/en-us/visualstudio/msbuild/touch-task?view=vs-2019) to prevent redundant npm Target runs.
