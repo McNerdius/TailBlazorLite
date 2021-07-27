@@ -36,6 +36,7 @@ jobs:
       - name: Build Tailwind CSS
         run: |
           npm install -g npm@latest
+          cd ./Source
           npm install
           npm run publish
 
