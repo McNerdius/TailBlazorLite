@@ -14,7 +14,7 @@
             <Output TaskParameter="ExitCode" PropertyName="error" />
         </Exec>
         <Error Condition="'$(error)' != '0'" Text="install npm please !" />
-        <Exec Command="npm install" />
+        <Exec Command="npm install" Condition="'$(Configuration)' != 'Release'" />
         <Touch Files="node_modules/.install-stamp" AlwaysCreate="true" />
     </Target>
     <Target Name="tailwind build" AfterTargets="Build">
