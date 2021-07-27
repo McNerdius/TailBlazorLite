@@ -1,3 +1,8 @@
+# vNext
+
+- Don't run `tailwind build` if launched via `watch.ps1` or from VS Code.
+- Add Static Web Apps deployment.
+
 # 0.2.3
 
 - include `watch.ps1` to start Blazor/Tailwind watch in one go
