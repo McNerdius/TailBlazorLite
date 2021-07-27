@@ -31,17 +31,18 @@ jobs:
           node-version: "14"
 
       - name: Build Razor CSS
-        run: dotnet build ./Source/TailBlazorProject.csproj -c Release
+        run: |
+          cd ./Source
+          dotnet build ./TailBlazorProject.csproj -c Release
 
       - name: Build Tailwind CSS
         run: |
           npm install -g npm@latest
-          cd ./Source
           npm install
           npm run publish
 
       - name: Publish Site
-        run: dotnet publish ./Source/TailBlazorProject.csproj -c Release
+        run: dotnet publish ./TailBlazorProject.csproj -c Release
 
       - name: Build And Deploy
         id: builddeploy
@@ -54,7 +55,7 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "./Source/bin/Release/net6.0/publish/wwwroot" # App source code path
+          app_location: "./bin/Release/publish/wwwroot" # App source code path
           output_location: "wwwroot" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
