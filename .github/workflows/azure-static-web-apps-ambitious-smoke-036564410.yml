@@ -20,15 +20,15 @@ jobs:
           submodules: true
 
       - name: Install Node 14
-              uses: actions/setup-node@v2
-              with:
-                node-version: "14"
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
 
       - name: Build Razor CSS
         run: dotnet build ./Source/TailBlazorProject.csproj -c Release
 
       - name: Build Tailwind CSS
-        run:  npm run buildcss:dev
+        run: npm run buildcss:dev
 
       - name: Publish Site
         run: dotnet publish ./Source/TailBlazorProject.csproj -c Release
