@@ -6,19 +6,21 @@
         <RootNamespace>TailBlazorProject</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0-preview.7.21378.6" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0-preview.7.21378.6" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0-rc.1.21410.16" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0-rc.1.21410.16" PrivateAssets="all" />
+    </ItemGroup>
+    <ItemGroup>
     </ItemGroup>
     <Target Condition="'$(Configuration)' != 'Release'" Name="npm install" BeforeTargets="tailwind build" Inputs="package.json" Outputs="node_modules/.install-stamp">
         <Exec Command="npm -v" ContinueOnError="true">
             <Output TaskParameter="ExitCode" PropertyName="error" />
         </Exec>
         <Error Condition="'$(error)' != '0'" Text="install npm please !" />
-        <Exec Command="npm install"/>
+        <Exec Command="npm install" />
         <Touch Files="node_modules/.install-stamp" AlwaysCreate="true" />
     </Target>
     <Target Name="tailwind build" AfterTargets="Build">
-        <Exec Command="npm run build" Condition="'$(Configuration)' == 'Debug'"/>
-        <Exec Command="npm run publish" Condition="'$(Configuration)' == 'Release'"/>
+        <Exec Command="npm run build" Condition="'$(Configuration)' == 'Debug'" />
+        <Exec Command="npm run publish" Condition="'$(Configuration)' == 'Release'" />
     </Target>
 </Project>
