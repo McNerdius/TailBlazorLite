@@ -15,7 +15,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 6.0.0-rc.1.*
+          dotnet-version: 6.0.100-rc.1.21411.12
           include-prerelease: true
       - name: Restore dependencies
         run: dotnet restore "./Source"
