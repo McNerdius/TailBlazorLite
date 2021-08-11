@@ -23,4 +23,4 @@ Some *deeper integration* bits:
 
 # Upcoming
 
-An Azure Static Web Apps deployment.  Azure Static Web Apps "automagic" deployment falls short here: it sees `package.json` and assumes this is a JS-ecosystem project.  We have to give it a bit of extra help.
+Notes on the Azure Static Web Apps deployment.  Azure Static Web Apps "automagic" deployment falls short here: it sees `package.json` and assumes this is a JS-ecosystem project.  We have to give it a bit of extra help.
