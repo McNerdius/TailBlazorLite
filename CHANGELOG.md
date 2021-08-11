@@ -1,7 +1,10 @@
-# vNext
+# 0.3
 
+- Upgrade to .NET 6 preview 7
+    - Match new project template's Program.cs
 - Don't run `tailwind build` if launched via `watch.ps1` or from VS Code.
 - Add Static Web Apps deployment.
+- 
 
 # 0.2.3
 
