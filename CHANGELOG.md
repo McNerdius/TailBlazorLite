@@ -1,4 +1,9 @@
-# vNext
+# 0.2.5
+
+- Change html title tag to TailBlazorProject so it will get swapped out for user's project name.
+- Specify Preview 6 for deployment as Preview 7 borks build
+
+# 0.2.4
 
 - Don't run `tailwind build` if launched via `watch.ps1` or from VS Code.
 - Add Static Web Apps deployment.
