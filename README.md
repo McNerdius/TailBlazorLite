@@ -20,7 +20,14 @@ Some *deeper integration* bits:
   * In order to take advantage of Tailwind JIT's *fast* incremental builds, and not restart your app in Visual Studio every time you change your CSS, running `npm run watch` is the way to go.
 * VS Code Tasks & Launch Configurations for Debug & Watch.  The `Watch` Launch config is a more robust `watch.ps1` - letting you launch your Blazor App and Tailwind JIT in `watch` mode via F5.
 
-
 # Upcoming
 
-An Azure Static Web Apps deployment.  Azure Static Web Apps "automagic" deployment falls short here: it sees `package.json` and assumes this is a JS-ecosystem project.  We have to give it a bit of extra help.
+Notes on the Azure Static Web Apps deployment.  Azure Static Web Apps "automagic" deployment falls short here: it sees `package.json` and assumes this is a JS-ecosystem project.  We have to give it a bit of extra help.
+
+# Roadmap
+
+* Keep `main` and in sync with .NET 6 previews and any Tailwind CSS releases that change the still-preview JIT mode.
+* When .NET 6 / Tailwind JIT are stable, put `tailblazor` template on NuGet and use branches to keep up with previews.
+
+**.NET 6 Preview 7 will be skipped due to an issue solved in RC1.** I will keep `main` on Preview 6 and create an RC1 branch, to be merged in September when RC1 is "official".  The template in that branch is based on Preview 7's `dotnet new blazorwasm` - but RC1 is required to build/run it.
+
