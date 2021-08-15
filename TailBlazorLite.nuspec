@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <repository type="git" url="https://github.com/McNerdius/TailBlazorLite" />
-        <id>McNerdius.TailBlazor.Lite.nuspec</id>
-        <version>0.2.6</version>
+        <id>McNerdius.TailBlazor</id>
+        <version>0.2.7</version>
         <description>
       A minimal Tailwind JIT + Blazor WASM adaptation of the default Bootstrap-based template.
     </description>
