@@ -9,7 +9,8 @@
       "console": "integratedTerminal",
       "args": [
         "watch",
-        "run"
+        "run",
+        "-- -property TailwindBuild=false"
       ],
       "cwd": "${workspaceFolder}/",
       "preLaunchTask": "build & start tailwind jit/watch",
