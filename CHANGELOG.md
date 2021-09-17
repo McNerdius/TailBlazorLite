@@ -1,3 +1,7 @@
+# 0.3
+
+- Move to .NET 6 RC1 and adjust template to match as appropriate.
+
 # 0.2.6
 
 - Prevent redundant builds when using `watch.ps1`, VS Code `F5`, or `dotnet [watch] run -property TailwindBuild=false` which blocks the `tailwind build` msbuild target. Visual Studio `F5` still relies on it but `watch.ps1` is still the way to go in VS. (I still haven't looked at VS 2022 to see if there is an equivalent of `launch.json` for `F5` behavior there.)
