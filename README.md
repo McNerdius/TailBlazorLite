@@ -16,8 +16,8 @@ Some *deeper integration* bits:
 
 * Checking for a node installation and installing npm packages if need be. (zzz...)
 * `watch.ps1` to launch both the Blazor app and Tailwind JIT in their own `watch` modes.
-  * The `tailwind build` msbuild Target does a single build of your CSS when you hit F5 in Visual Studio or use `dotnet run`.  Using either of these by themselves, CSS changes will not be applied.  (Also note, Hot Reloads won't trigger the `tailwind build` Target, as it doesn't trigger a build.)
-  * In order to take advantage of Tailwind JIT's *fast* incremental builds, and not restart your app in Visual Studio every time you change your CSS, running `npm run watch` is the way to go.
+  * The `tailwind build` msbuild Target does a single build of your CSS when you hit F5 in Visual Studio or use `dotnet run`.  Using either of these by themselves, CSS edits will not be applied "live".  (Also note, Hot Reloads won't trigger the `tailwind build` Target, as it doesn't trigger a build.)
+  * In order to take advantage of Tailwind JIT's *fast* incremental builds, and not restart your app in Visual Studio every time you change your CSS, using `watch.ps1` or equivalent is the way to go.
 * VS Code Tasks & Launch Configurations for Debug & Watch.  The `Watch` Launch config is a more robust `watch.ps1` - letting you launch your Blazor App and Tailwind JIT in `watch` mode via F5 and ensuring the npm task is terminated along with the dotnet task.
 
 # Upcoming
