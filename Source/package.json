@@ -13,6 +13,9 @@
   "license": "0BSD",
   "devDependencies": {
     "postcss-import": "^14.0.2",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^3.0.0-alpha.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.1.2"
   }
 }
