@@ -22,7 +22,9 @@ jobs:
       - name: Build
         run: dotnet build "./Source" --configuration Release --no-restore
       - name: Pack
-        run: nuget.exe pack "./TailBlazorLite.nuspec" -NoDefaultExcludes
+        run: |
+          dotnet restore
+          dotnet pack ./Template.csproj --no-build --output .\
       - name: Push
         run: |
           ls

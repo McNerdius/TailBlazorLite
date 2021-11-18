@@ -1,1 +1,2 @@
-nuget.exe pack TailBlazorLite.nuspec -NoDefaultExcludes
+dotnet restore
+dotnet pack ./Template.csproj --no-build --output ./
