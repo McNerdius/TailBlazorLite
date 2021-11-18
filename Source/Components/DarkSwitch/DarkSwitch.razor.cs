@@ -1,10 +1,10 @@
-﻿
+
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace TailBlazorProject.Shared;
+namespace TailBlazorProject.Components;
 
-public partial class MainLayout : LayoutComponentBase
+public partial class DarkSwitch : ComponentBase
 {
 
     [Inject]
@@ -12,11 +12,10 @@ public partial class MainLayout : LayoutComponentBase
     { get; set; }
 
     private Task<IJSObjectReference> _module;
-    private Task<IJSObjectReference> Module => _module ??= JSRuntime.InvokeAsync<IJSObjectReference>( "import", "./Shared/MainLayout.razor.js" ).AsTask();
+    private Task<IJSObjectReference> Module => _module ??= JSRuntime.InvokeAsync<IJSObjectReference>( "import", "./Components/DarkSwitch/DarkSwitch.razor.js" ).AsTask();
 
     private string currentTheme = "light";
     private bool isLightMode => currentTheme == "light";
-    private bool collapseNavMenu = true;
 
     private async Task switchTheme()
     {
@@ -29,12 +28,5 @@ public partial class MainLayout : LayoutComponentBase
         };
 
         await module.InvokeAsync<string>( "switchTheme", currentTheme );
-    }
-
-    private string NavMenuCssClass => collapseNavMenu ? "hidden sm:block" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
     }
 }

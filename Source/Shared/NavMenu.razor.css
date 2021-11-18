@@ -1,32 +1,7 @@
-/* .navbar {
-  @apply relative flex flex-wrap;
-  @apply items-center justify-between;
-  @apply h-14 pl-6 pr-4 py-2;
-  @apply text-lg bg-black/40;
-}
-
 .nav {
   @apply flex flex-wrap flex-col;
   @apply pl-0 mb-0;
   @apply list-none;
-}
-
-.navbar-toggler {
-  @apply bg-white/10;
-  @apply px-3 py-1;
-  @apply text-lg leading-4;
-  @apply border border-white/10 rounded;
-  @apply sm:hidden;
-}
-
-.navbar-toggler-icon {
-  @apply inline-block items-center align-middle;
-  @apply text-white/50;
-  @apply w-6 h-6;
-
-  content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
 }
 
 .nav-item {
@@ -44,4 +19,4 @@
 
 .nav-item ::deep a:hover {
   @apply text-white bg-white/10;
-} */
+}
