@@ -16,6 +16,8 @@
         <IncludeBuildOutput>false</IncludeBuildOutput>
         <ContentTargetFolders>content</ContentTargetFolders>
         <NoDefaultExcludes>true</NoDefaultExcludes>
+        <RepositoryUrl>https://github.com/McNerdius/TailBlazorLite</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
     <ItemGroup>
         <Content Include="Source\**\*;Source\.gitignore" Exclude="Source\bin\**;Source\obj\**;Source\node_modules\**" />
