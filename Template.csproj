@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <DateVersion>$([System.DateTime]::Now.ToString(yyyy.MM.dd.HH-mm))</DateVersion>
+        <DateVersion>$([System.DateTime]::Now.ToString(yyyy.MM.dd-HHmm))</DateVersion>
     </PropertyGroup>
     <PropertyGroup>
         <PackageType>Template</PackageType>
