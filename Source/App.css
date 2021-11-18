@@ -3,6 +3,17 @@
 @import "tailwindcss/utilities";
 @import "./obj/scopedcss/bundle/TailBlazorProject.styles.css";
 
+main,
+html {
+  @apply text-black dark:text-white;
+  @apply bg-white dark:bg-gray-800;
+}
+
+html,
+body {
+  @apply h-full m-0;
+}
+
 p {
   @apply mb-4;
 }

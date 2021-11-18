@@ -2,8 +2,7 @@ module.exports = {
     content: [
         './**/*.{razor,html}'
     ],
-    // mode: 'jit',
-    darkMode: 'media',
+    darkMode: 'class',
     theme: {
         extend:
         {

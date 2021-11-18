@@ -1,8 +1,9 @@
-/* .navbar {
-  @apply relative flex flex-wrap;
-  @apply items-center justify-between;
-  @apply h-14 pl-6 pr-4 py-2;
-  @apply text-lg bg-black/40;
+.repo-link {
+  @apply flex m-auto rounded-full pl-1 ml-6;
+  @apply ring-1 ring-gray-800;
+  @apply hover:scale-110 transition-transform duration-75;
+  @apply bg-transparent text-gray-800;
+  @apply focus:outline-none;
 }
 
 .nav {
@@ -12,17 +13,13 @@
 }
 
 .navbar-toggler {
-  @apply bg-white/10;
-  @apply px-3 py-1;
-  @apply text-lg leading-4;
-  @apply border border-white/10 rounded;
   @apply sm:hidden;
+  @apply bg-transparent ring-[#052767];
 }
 
 .navbar-toggler-icon {
   @apply inline-block items-center align-middle;
-  @apply text-white/50;
-  @apply w-6 h-6;
+  @apply text-black dark:text-white;
 
   content: "";
   background: no-repeat center center;
@@ -44,4 +41,4 @@
 
 .nav-item ::deep a:hover {
   @apply text-white bg-white/10;
-} */
+}
